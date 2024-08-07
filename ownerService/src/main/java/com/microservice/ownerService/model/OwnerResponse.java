@@ -5,11 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
 @AllArgsConstructor
 @Builder
 public class OwnerResponse {
-    private String id;
+    private long id;
     private String name;
 //    private String token;
 }

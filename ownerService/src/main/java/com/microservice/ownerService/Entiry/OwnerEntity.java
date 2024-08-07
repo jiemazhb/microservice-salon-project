@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//import java.util.UUID;
+
 @Entity
 @Data
 @Builder
@@ -13,8 +15,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class OwnerEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String name;
     private String gender;
     private String phone;
