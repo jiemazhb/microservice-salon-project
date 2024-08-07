@@ -2,22 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ownerService" />
         <module name="serviceRegistry" />
+        <module name="serviceConfig" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ownerService" target="17" />
+      <module name="serviceConfig" target="17" />
       <module name="serviceRegistry" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ownerService" options="-parameters" />
+      <module name="serviceConfig" options="-parameters" />
       <module name="serviceRegistry" options="-parameters" />
     </option>
   </component>

@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/ownerService/pom.xml" />
         <option value="$PROJECT_DIR$/serviceRegistry/pom.xml" />
+        <option value="$PROJECT_DIR$/serviceConfig/pom.xml" />
       </list>
     </option>
   </component>

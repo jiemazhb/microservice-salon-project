@@ -11,18 +11,20 @@ import com.microservice.ownerService.repository.OwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Service
 public class OwnerServiceImpl implements OwnerService{
 
     private final OwnerRepository ownerRepository;
-    private final BCryptPasswordEncoder passwordEncoder;
-    private final String SECRET_KEY = "your_secret_key";
+//    private final PasswordEncoder passwordEncoder;
+
     @Autowired
-    public OwnerServiceImpl(OwnerRepository ownerRepository, BCryptPasswordEncoder passwordEncoder){
+//    public OwnerServiceImpl(OwnerRepository ownerRepository, PasswordEncoder passwordEncoder){
+    public OwnerServiceImpl(OwnerRepository ownerRepository){
         this.ownerRepository = ownerRepository;
-        this.passwordEncoder = passwordEncoder;
+//        this.passwordEncoder = passwordEncoder;
     }
     @Override
     public void register(OwnerRequest ownerRequest) {
@@ -37,7 +39,8 @@ public class OwnerServiceImpl implements OwnerService{
                     .phone(ownerRequest.getPhone())
                     .gender(ownerRequest.getGender())
                     .email(ownerRequest.getEmail())
-                    .password(passwordEncoder.encode(ownerRequest.getPassword()))
+//                    .password(passwordEncoder.encode(ownerRequest.getPassword()))
+                                        .password(ownerRequest.getPassword())
                     .experience(ownerRequest.getExperience())
                     .build();
 
@@ -54,8 +57,8 @@ public class OwnerServiceImpl implements OwnerService{
                 .findByEmail(ownerRequest.getEmail())
                 .orElseThrow(() -> new NotFoundException("User name does not exist"));
 
-        boolean isMatch = this.passwordEncoder.matches(ownerRequest.getPassword(), ownerEntity.getPassword());
-
+//        boolean isMatch = this.passwordEncoder.matches(ownerRequest.getPassword(), ownerEntity.getPassword());
+        boolean isMatch = true;
         if(isMatch){
 //             String token = generateJwtToken(ownerEntity);
              OwnerResponse userResponse = OwnerResponse.builder()
