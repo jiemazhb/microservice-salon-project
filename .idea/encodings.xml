@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bookingService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bookingService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ownerService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ownerService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/salonService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/salonService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/serviceConfig/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/serviceConfig/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceManagementService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceManagementService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/serviceRegistry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/serviceRegistry/src/main/resources" charset="UTF-8" />
   </component>

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bookingService/bookingService.iml" filepath="$PROJECT_DIR$/bookingService/bookingService.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservice salon.iml" filepath="$PROJECT_DIR$/.idea/microservice salon.iml" />
       <module fileurl="file://$PROJECT_DIR$/ownerService/ownerService.iml" filepath="$PROJECT_DIR$/ownerService/ownerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/salonService/salonService.iml" filepath="$PROJECT_DIR$/salonService/salonService.iml" />
       <module fileurl="file://$PROJECT_DIR$/serviceConfig/serviceConfig.iml" filepath="$PROJECT_DIR$/serviceConfig/serviceConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceManagementService/serviceManagementService.iml" filepath="$PROJECT_DIR$/serviceManagementService/serviceManagementService.iml" />
       <module fileurl="file://$PROJECT_DIR$/serviceRegistry/serviceRegistry.iml" filepath="$PROJECT_DIR$/serviceRegistry/serviceRegistry.iml" />
     </modules>
   </component>
