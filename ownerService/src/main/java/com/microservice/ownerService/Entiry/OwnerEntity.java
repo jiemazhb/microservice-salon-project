@@ -1,16 +1,23 @@
 package com.microservice.ownerService.Entiry;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class OwnerEntity {
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
     private String name;
     private String gender;
     private String phone;
     private String email;
     private int experience;
-//    private Salon salon;
 }

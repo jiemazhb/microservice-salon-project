@@ -1,7 +1,7 @@
 package com.microservice.ownerService.service;
 
-import org.springframework.stereotype.Service;
+import com.microservice.ownerService.model.OwnerRequest;
 
-@Service
 public interface OwnerService {
+    void register(OwnerRequest ownerRequest);
 }
