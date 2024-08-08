@@ -8,15 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="salonService" />
-        <module name="serviceManagementService" />
         <module name="ownerService" />
         <module name="serviceRegistry" />
         <module name="serviceConfig" />
+        <module name="gatewayService" />
+        <module name="serviceManagementService" />
         <module name="bookingService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bookingService" target="17" />
+      <module name="gatewayService" target="17" />
       <module name="ownerService" target="17" />
       <module name="salonService" target="17" />
       <module name="serviceConfig" target="17" />
@@ -27,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bookingService" options="-parameters" />
+      <module name="gatewayService" options="-parameters" />
       <module name="ownerService" options="-parameters" />
       <module name="salonService" options="-parameters" />
       <module name="serviceConfig" options="-parameters" />
